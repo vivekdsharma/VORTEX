@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="events.css">
+    <title>Event</title>
+</head>
+<body>
+
+    <div id="main">
+        <nav class="rum-raisin-regular">
+            <ul class="sidebar">
+              <li onclick= hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+              <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 50 50"
+                style="fill:#FFFFFF; margin-right:15px
+                ">
+                    <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+                </svg>HOME</a></li>
+              <li><a href="events.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill:#FFFFFF;margin-right:15px
+                "><path d="M11 12h6v6h-6z"></path><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.001 16H5V8h14l.001 12z"></path></svg>EVENT</a></li>
+              <li><a href="sponsors.html"class="hello"><svg xmlns="http://www.w3.org/2000/svg"width="20" height="20" viewBox="0 0 24 24" style="fill:#FFFFFF;margin-right:15px
+                "><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 20V7h14V6l.002 14H5z"></path><path d="M7 9h10v2H7zm0 4h5v2H7z"></path></svg>SPONSORS</a></li>
+              <li><a href="contactUs.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill:#FFFFFF;margin-right:15px
+                "><path d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z"></path></svg>FIND US</a></li>
+            </ul>
+            <ul id="mainnav">
+              
+              <li><img src=".//images/image.png" alt="LEAD"></li>
+              <li class="hides"><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                style="fill:#FFFFFF; padding-right: 5px; padding-bottom: 5px;">
+                    <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+                </svg>HOME</a></li>
+              <li class="hides"><a href="events.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:#FFFFFF; padding-right:5px;"><path d="M11 12h6v6h-6z"></path><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.001 16H5V8h14l.001 12z"></path></svg>EVENT</a></li>
+              <li class="hides"><a href="sponsors.html"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill:#FFFFFF;"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 20V7h14V6l.002 14H5z"></path><path d="M7 9h10v2H7zm0 4h5v2H7z"></path></svg><style text-indent: 20px></style>SPONSORS</a></li>
+              <li class="hides"><a href="contactUs.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:#FFFFFF; padding-right:2px;"><path d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z"></path></svg>FIND US</a></li>
+              <li  class="menuButton"    onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            </nav>
+
+    <div id="container">
+        <div id="phases" >
+            <div id="phaseOne" class="risque-regular" ><h1 class="heading">Phase 1</h1><p class="para">"solve the riddles, crack the code, and find the truth in every fold!"</p>
+            <button class="pbtn" onclick="showrulebook(1)">Rule Book</button></div>
+            <div id="phaseTwo" class="risque-regular"><h1 class="heading">Phase 2</h1><p class="para">Pick your type, design with might, and watch your vision take flight</p><button class="pbtn"  onclick="showrulebook(2)">Rule Book</button></div>
+            <div id="phaseThree" class="risque-regular" ><h1>Phase 3</h1><p class="para"></p><button class="pbtn" onclick="showrulebook(3)">Rule Book</button></div>
+            <!-- <div id="phaseFour" class="risque-regular" onclick="showrulebook(4)"><h1>Phase 4</h1><p class="para"></p></div> -->
+        </div>
+
+        <div id="rulebook">      
+          <div class="content rulebooks">
+          <h1>Rulebook For VORTEX</h1>
+          <p>
+            <ul>
+              <li>• VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+              </li>
+              <li>• The participants will compete in  teams of 3-4 members,  with each team appointing a leader as the primary contact with event organisers</li>
+              <li>• The participating teams are required to bring their own laptops for the event.</li>
+              <li>• Teams will face a series of challenges designed to test creativity, problem-solving skills, and teamwork across three phases:  Operation Shadow Search  , WebFlux and Error 404.</li>
+              <li>• In Phase 1,teams will solve Stranger Things-themed clues and puzzles to advance through a series of locations or tasks, navigating the Upside Down with wit and strategy.</li>
+              <li>• Following this, the teams will design a conceptual themed website using only their imagination and presentation skills.</li>
+              <li>• And finally, for the ultimate challenge, the top teams with the highest cumulative scores from Phases 1 and 2 will advance.</li>
+              <li>• Teams must decipher various formats of clues, morse codes, puzzles to progress and capture the ultimate flag.</li>
+              <li>• Teams must work independently and refrain from collaborating with other teams.</li>
+              <li>• Fair play is expected , any form of cheating or rule violation will lead to disqualification.</li>
+              <li>• The organisers' decisions regarding team assignments, judging, disputes, and rule enforcement are final.</li>
+              <li>• Any disputes or concerns must be raised through the appointed team leader</li>
+            </ul>
+          </p>
+        </div></div>
+    </div>
+
+
+    <div class="container2 swiper">
+      <div class="slider-wrapper">
+        <div class="card-list swiper-wrapper">
+          <div id="phaseOneSlider" class="swiper-slide phasesSlider card-item risque-regular">
+            <h1 class="heading">Phase 1</h1>
+            <p class="para">"solve the riddles, crack the code, and find the truth in every fold!"</p>
+            <button class="pbtn"  onclick="togglePopup(1)">Rule Book</button>
+          </div>
+          <div id="phaseTwoSlider" class="swiper-slide phasesSlider risque-regular card-item" >
+            <h1 class="heading">Phase 2</h1>
+            <p class="para">Pick your type, design with might, and watch your vision take flight.</p>
+            <button class="pbtn" onclick="togglePopup(2)">Rule Book</button>
+          </div>
+          <div id="phaseThreeSlider" class="swiper-slide phasesSlider risque-regular card-item">
+            <h1 class="heading">Phase 3</h1>
+            <p class="para"></p>
+            <button class="pbtn" onclick="togglePopup(3)">Rule Book</button>
+          </div>
+          <!-- <div id="phaseFourSlider" class="swiper-slide phasesSlider risque-regular card-item" onclick="togglePopup(4)">
+            <h1 class="heading">Phase 4</h1>
+            <p class="para"></p>
+          </div> -->
+        </div>
+    
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    
+    <div class="popup" id="popup-1">
+      <div class="overlay" onclick="togglePopup(1)"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup(1)">&times;</div>
+        <h1>Rulebook For Phase 1</h1>
+        <p>
+          <!-- <ol>
+            <li>VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+            </li>
+            <li>The participants will compete in  teams of 3-4 members,  with each team appointing a leader as the primary contact with event organisers</li>
+            <li>The participating teams are required to bring their own laptops for the event.</li>
+            <li>Teams will face a series of challenges designed to test creativity, problem-solving skills, and teamwork across three phases:  Operation Shadow Search  , WebFlux and Error 404.</li>
+            <li>In Phase 1,teams will solve Stranger Things-themed clues and puzzles to advance through a series of locations or tasks, navigating the Upside Down with wit and strategy.</li>
+            <li>Following this, the teams will design a conceptual themed website using only their imagination and presentation skills.</li>
+            <li>And finally, for the ultimate challenge, the top teams with the highest cumulative scores from Phases 1 and 2 will advance.</li>
+            <li>Teams must decipher various formats of clues, morse codes, puzzles to progress and capture the ultimate flag.</li>
+            <li>Teams must work independently and refrain from collaborating with other teams.</li>
+            <li>Fair play is expected , any form of cheating or rule violation will lead to disqualification.</li>
+            <li>The organisers' decisions regarding team assignments, judging, disputes, and rule enforcement are final.</li>
+            <li>Any disputes or concerns must be raised through the appointed team leader</li>
+          </ol> -->
+
+          <h1>To Be Reveal Soon</h1>
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="popup-2">
+      <div class="overlay" onclick="togglePopup(2)"></div>
+      <div class="content rulebooks">
+        <div class="close-btn" onclick="togglePopup(2)">&times;</div>
+        <h1>Rulebook For Phase 2</h1>
+        <p>
+          <!-- <ol>
+            <li>VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+            </li>
+            <li>The participants will compete in  teams of 3-4 members,  with each team appointing a leader as the primary contact with event organisers</li>
+            <li>The participating teams are required to bring their own laptops for the event.</li>
+            <li>Teams will face a series of challenges designed to test creativity, problem-solving skills, and teamwork across three phases:  Operation Shadow Search  , WebFlux and Error 404.</li>
+            <li>In Phase 1,teams will solve Stranger Things-themed clues and puzzles to advance through a series of locations or tasks, navigating the Upside Down with wit and strategy.</li>
+            <li>Following this, the teams will design a conceptual themed website using only their imagination and presentation skills.</li>
+            <li>And finally, for the ultimate challenge, the top teams with the highest cumulative scores from Phases 1 and 2 will advance.</li>
+            <li>Teams must decipher various formats of clues, morse codes, puzzles to progress and capture the ultimate flag.</li>
+            <li>Teams must work independently and refrain from collaborating with other teams.</li>
+            <li>Fair play is expected , any form of cheating or rule violation will lead to disqualification.</li>
+            <li>The organisers' decisions regarding team assignments, judging, disputes, and rule enforcement are final.</li>
+            <li>Any disputes or concerns must be raised through the appointed team leader</li>
+          </ol> -->
+          <h1>To Be Reveal Soon</h1>
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="popup-3">
+      <div class="overlay" onclick="togglePopup(3)"></div>
+      <div class="content rulebooks">
+        <div class="close-btn" onclick="togglePopup(3)">&times;</div>
+        <h1>Rulebook For Phase 3</h1>
+        <p>
+          <!-- <ol>
+            <li>VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+            </li>
+            <li>The participants will compete in  teams of 3-4 members,  with each team appointing a leader as the primary contact with event organisers</li>
+            <li>The participating teams are required to bring their own laptops for the event.</li>
+            <li>Teams will face a series of challenges designed to test creativity, problem-solving skills, and teamwork across three phases:  Operation Shadow Search  , WebFlux and Error 404.</li>
+            <li>In Phase 1,teams will solve Stranger Things-themed clues and puzzles to advance through a series of locations or tasks, navigating the Upside Down with wit and strategy.</li>
+            <li>Following this, the teams will design a conceptual themed website using only their imagination and presentation skills.</li>
+            <li>And finally, for the ultimate challenge, the top teams with the highest cumulative scores from Phases 1 and 2 will advance.</li>
+            <li>Teams must decipher various formats of clues, morse codes, puzzles to progress and capture the ultimate flag.</li>
+            <li>Teams must work independently and refrain from collaborating with other teams.</li>
+            <li>Fair play is expected , any form of cheating or rule violation will lead to disqualification.</li>
+            <li>The organisers' decisions regarding team assignments, judging, disputes, and rule enforcement are final.</li>
+            <li>Any disputes or concerns must be raised through the appointed team leader</li>
+          </ol> -->
+          <h1>To Be Reveal Soon</h1>
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="popup-4">
+      <div class="overlay" onclick="togglePopup(4)"></div>
+      <div class="content rulebooks">
+        <div class="close-btn" onclick="togglePopup(4)">&times;</div>
+        <h1>Rulebook For Phase 4</h1>
+        <p>
+          <!-- <ol>
+            <li>VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+            </li>
+            <li>The participants will compete in  teams of 3-4 members,  with each team appointing a leader as the primary contact with event organisers</li>
+            <li>The participating teams are required to bring their own laptops for the event.</li>
+            <li>Teams will face a series of challenges designed to test creativity, problem-solving skills, and teamwork across three phases:  Operation Shadow Search  , WebFlux and Error 404.</li>
+            <li>In Phase 1,teams will solve Stranger Things-themed clues and puzzles to advance through a series of locations or tasks, navigating the Upside Down with wit and strategy.</li>
+            <li>Following this, the teams will design a conceptual themed website using only their imagination and presentation skills.</li>
+            <li>And finally, for the ultimate challenge, the top teams with the highest cumulative scores from Phases 1 and 2 will advance.</li>
+            <li>Teams must decipher various formats of clues, morse codes, puzzles to progress and capture the ultimate flag.</li>
+            <li>Teams must work independently and refrain from collaborating with other teams.</li>
+            <li>Fair play is expected , any form of cheating or rule violation will lead to disqualification.</li>
+            <li>The organisers' decisions regarding team assignments, judging, disputes, and rule enforcement are final.</li>
+            <li>Any disputes or concerns must be raised through the appointed team leader</li>
+          </ol> -->
+          <h1>To Be Reveal Soon</h1>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="popup" id="rulebook-1">
+      <div class="overlay" onclick="togglePopup(1)"></div>
+      <div class="content rulebooks">
+        <!-- <div class="close-btn" onclick="togglePopup(1)">&times;</div> -->
+        <h1>Rulebook For Phase 1</h1>
+        <p>
+          <!-- <ol>
+            <li>• VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+            </li>
+            <li>• The participants will compete in  teams of 3-4 members,  with each team appointing a leader as the primary contact with event organisers</li>
+            <li>• The participating teams are required to bring their own laptops for the event.</li>
+            <li>• Teams will face a series of challenges designed to test creativity, problem-solving skills, and teamwork across three phases:  Operation Shadow Search  , WebFlux and Error 404.</li>
+            <li>• In Phase 1,teams will solve Stranger Things-themed clues and puzzles to advance through a series of locations or tasks, navigating the Upside Down with wit and strategy.</li>
+            <li>• Following this, the teams will design a conceptual themed website using only their imagination and presentation skills.</li>
+            <li>• And finally, for the ultimate challenge, the top teams with the highest cumulative scores from Phases 1 and 2 will advance.</li>
+            <li>• Teams must decipher various formats of clues, morse codes, puzzles to progress and capture the ultimate flag.</li>
+            <li>• Teams must work independently and refrain from collaborating with other teams.</li>
+            <li>• Fair play is expected , any form of cheating or rule violation will lead to disqualification.</li>
+            <li>• The organisers' decisions regarding team assignments, judging, disputes, and rule enforcement are final.</li>
+            <li>• Any disputes or concerns must be raised through the appointed team leader</li>
+          </ol> -->
+          <h1>To Be Reveal Soon</h1>
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="rulebook-2">
+      <div class="overlay" onclick="togglePopup(2)"></div>
+      <div class="content rulebooks">
+        <!-- <div class="close-btn" onclick="togglePopup(2)">&times;</div> -->
+        <h1>Rulebook For Phase 2</h1>
+        <p>
+          <!-- <ol>
+            <li>• VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+            </li>
+            <li>• The participants will compete in  teams of 3-4 members,  with each team appointing a leader as the primary contact with event organisers</li>
+            <li>• The participating teams are required to bring their own laptops for the event.</li>
+            <li>• Teams will face a series of challenges designed to test creativity, problem-solving skills, and teamwork across three phases:  Operation Shadow Search  , WebFlux and Error 404.</li>
+            <li>• In Phase 1,teams will solve Stranger Things-themed clues and puzzles to advance through a series of locations or tasks, navigating the Upside Down with wit and strategy.</li>
+            <li>• Following this, the teams will design a conceptual themed website using only their imagination and presentation skills.</li>
+            <li>• And finally, for the ultimate challenge, the top teams with the highest cumulative scores from Phases 1 and 2 will advance.</li>
+            <li>• Teams must decipher various formats of clues, morse codes, puzzles to progress and capture the ultimate flag.</li>
+            <li>• Teams must work independently and refrain from collaborating with other teams.</li>
+            <li>• Fair play is expected , any form of cheating or rule violation will lead to disqualification.</li>
+            <li>• The organisers' decisions regarding team assignments, judging, disputes, and rule enforcement are final.</li>
+            <li>• Any disputes or concerns must be raised through the appointed team leader</li>
+          </ol> -->
+
+          <h1>To Be Reveal Soon</h1>
+        </p>
+      </div>
+    </div>
+    <div class="popup" id="rulebook-3">
+      <div class="overlay" onclick="togglePopup(3)"></div>
+      <div class="content rulebooks">
+        <!-- <div class="close-btn" onclick="togglePopup(3)">&times;</div> -->
+        <h1>Rulebook For Phase 3</h1>
+        <p>
+          <!-- <ol>
+            <li>VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+              <li>• VORTEX is an exhilarating, multi-phase competition centered around the Stranger Things universe taking place on 8th September, 2024, <time> pm onwards.
+              </li>
+              <li>• The participants will compete in  teams of 3-4 members,  with each team appointing a leader as the primary contact with event organisers</li>
+              <li>• The participating teams are required to bring their own laptops for the event.</li>
+              <li>• Teams will face a series of challenges designed to test creativity, problem-solving skills, and teamwork across three phases:  Operation Shadow Search  , WebFlux and Error 404.</li>
+              <li>• In Phase 1,teams will solve Stranger Things-themed clues and puzzles to advance through a series of locations or tasks, navigating the Upside Down with wit and strategy.</li>
+              <li>• Following this, the teams will design a conceptual themed website using only their imagination and presentation skills.</li>
+              <li>• And finally, for the ultimate challenge, the top teams with the highest cumulative scores from Phases 1 and 2 will advance.</li>
+              <li>• Teams must decipher various formats of clues, morse codes, puzzles to progress and capture the ultimate flag.</li>
+              <li>• Teams must work independently and refrain from collaborating with other teams.</li>
+              <li>• Fair play is expected , any form of cheating or rule violation will lead to disqualification.</li>
+              <li>• The organisers' decisions regarding team assignments, judging, disputes, and rule enforcement are final.</li>
+              <li>• Any disputes or concerns must be raised through the appointed team leader</li>
+          </ol> -->
+          <h1>To Be Reveal Soon</h1>
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<script src="popup.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+</body>
+</html>

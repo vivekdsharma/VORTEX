@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+.road-rage-regular {
+    font-family: "Road Rage", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .song-myung-regular {
+    font-family: "Song Myung", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .rum-raisin-regular {
+    font-family: "Rum Raisin", sans-serif;
+    font-weight: 800;
+    font-style:normal;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: transparent;
+} */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('..//images/contactusbg.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+
+.mainn{
+    width: 100%;
+    height: 100%;
+}
+
+
+nav {
+    box-shadow: rgba(0, 0, 0, 2.5);
+    z-index: 3;
+    width: 100%;
+    /* position: fixed; */
+    /* top: 0; */
+    font-size: 18px;
+    
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+nav li {
+    height: 70px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px; 
+    text-decoration: none;
+    display: flex;
+    /* align-items: center; */
+    color: white;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+nav a:hover {
+    /* color: #00fbff; */
+    color: red;
+    /* font-weight: bold; */
+}
+
+nav li img {
+    width: 100%;
+    height: 200%;
+    padding-left: 12%;
+    margin-top: -18%;
+}
+
+
+nav ul :first-child {
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #1515157f;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  
+  .sidebar li {
+    width: 100%;
+  }
+  
+  .sidebar a {
+    width: auto;
+  }
+  .menuButton {
+    display: none;
+}
+@media (max-width:900px) {
+
+    .hides {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+}
+@media (max-width: 510px) {
+
+    nav img{
+        width: 10%;
+        height: 10%;
+    }
+    #phases{
+        width: 100%;
+    }
+}
+
+
+
+#container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content:center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100vh;
+    margin-left: 5%;
+    margin-top:-3%;
+}
+
+
+.left{
+    /* background-color: #D9D9D9; */
+    height: 75%;
+    width: 40%;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-top: 2.5%;
+    /* margin-left: -5%; */
+    /* background-color: rgba(255, 255, 255, 0.7);  */
+}
+
+.left h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5%;
+}
+
+.left p{
+    margin-top: 2.5%;
+
+}
+
+#logos {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0%;
+    margin-top: 2.5%;
+    /* background-color: rgba(255, 255, 255, 0.7);  */
+  }
+  
+  .social-logo {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    margin-left: 15%;
+  }
+  
+  #github{
+    width: 10%;
+    height: 10%;
+    margin-left: 10%;
+
+  }
+  #insta {
+    width: 10%;
+    height: 10%;
+    margin-left: 10%;
+  
+  }
+
+  
+  #linkdin {
+    width: 10%;
+    height: 10%;
+    /* margin-left: 10%; */
+  
+  }
+  
+  #youtube {
+    width: 15%;
+    height: 15%;
+    margin-left: 10%;
+  }
+  
+  .social-logo:hover {
+    transform: scale(1.2);
+  }
+
+.right{
+    position: relative;
+    height: 90%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.77); 
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.right{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    height: fit-content;
+
+  }
+  
+
+
+  #form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+
+  }
+  #inform{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    background-color: #020001;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 2%;
+    padding-bottom: 2.5%;
+
+  }
+
+  #inform img{
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  #inform h1{
+    margin-left: 21.5%;
+    color: white;
+
+  }
+  
+  input, textarea {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin: 2.5%;
+    margin-left:5%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #CE2E2A;
+    color: white;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #ff6b6b;
+  }
+
+  ::placeholder{
+    color: white;
+  }
+  
+.contentbutton {
+    --color: #CE2E2A;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    /* line-height: 2.5em; */
+    margin-left: 25%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.contentbutton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+    color: black;
+}
+
+.contentbutton:hover {
+    color: white;
+}
+
+.contentbutton:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+
+
+
+
+
+@media (max-width: 980px){
+
+    #inform img{
+        margin-left: 15%;
+    }
+    #inform h1{
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 910px){
+
+    #inform img{
+        margin-left: 10%;
+    }
+    #inform h1{
+        margin-left: 8%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 840px){
+
+    #inform img{
+        margin-left: 10%;
+    }
+    #inform h1{
+        margin-left: 8%;
+        font-size: 25px;
+    }
+}
+@media (max-width: 800px){
+
+    #container {
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+      }
+    #inform img{
+        margin-left: 10%;
+    }
+    #inform h1{
+        margin-left: 8%;
+        font-size: 25px;
+    }
+
+    .left{
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 8%;
+        background-color: rgba(255, 255, 255, 0.2); 
+        height: fit-content;
+    }
+
+    .left p{
+        font-size: 25px;
+    }
+
+    #logos {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0%;
+        margin-top: 2.5%;
+        margin-left: 5%;
+      }
+
+
+    .right{
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    #inform img{
+        margin-left: 15%;
+    }
+
+    #inform h1{
+        margin-left: 15%;
+        font-size: 40px;
+    }
+
+
+}
+
+
+
+@media (max-width: 750px){
+
+    #inform img {
+        margin-left: 10%;
+    }
+
+    #inform h1{
+        margin-left: 10%;
+    }
+}
+
+
+@media (max-width: 630px){
+
+    #inform h1{
+        margin-left: 5%;
+    }
+
+}
+
+@media (max-width: 595px){
+
+    #inform img {
+        margin-left: 0%;
+    }
+
+    #inform h1{
+        margin-left: 5%;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 520px){
+
+    #inform img{
+        height: 35%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #inform h1{
+        margin-left: 0%;
+        font-size: 35px;
+    }
+
+}
+
+
+@media (max-width: 495px){
+
+    #inform img{
+        height: 35%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #inform h1{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 430px){
+
+    #inform img{
+        height: 35%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #inform h1{
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 360px){
+
+    #inform img{
+        height: 35%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #inform h1{
+        font-size: 20px;
+    }
+
+}

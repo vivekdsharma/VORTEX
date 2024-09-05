@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactUs.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="mainn">
+            <nav class="rum-raisin-regular">
+                <ul class="sidebar">
+                  <li onclick= hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                  <li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="20" viewBox="0 0 50 50"
+                    style="fill:#FFFFFF; margin-right:15px
+                    ">
+                        <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+                    </svg>HOME</a></li>
+                  <li><a href="events.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill:#FFFFFF;margin-right:15px
+                    "><path d="M11 12h6v6h-6z"></path><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.001 16H5V8h14l.001 12z"></path></svg>EVENT</a></li>
+                  <li><a href="sponsors.html"class="hello"><svg xmlns="http://www.w3.org/2000/svg"width="20" height="20" viewBox="0 0 24 24" style="fill:#FFFFFF;margin-right:15px
+                    "><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 20V7h14V6l.002 14H5z"></path><path d="M7 9h10v2H7zm0 4h5v2H7z"></path></svg>SPONSORS</a></li>
+                  <li><a href="contactUs.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill:#FFFFFF;margin-right:15px
+                    "><path d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z"></path></svg>FIND US</a></li>
+                </ul>
+                <ul id="mainnav">
+                  
+                  <li><img src="..//images/image.png" alt="LEAD"></li>
+                  <li class="hides"><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                    style="fill:#FFFFFF; padding-right: 5px; padding-bottom: 5px;">
+                        <path d="M 25 1.0507812 C 24.7825 1.0507812 24.565859 1.1197656 24.380859 1.2597656 L 1.3808594 19.210938 C 0.95085938 19.550938 0.8709375 20.179141 1.2109375 20.619141 C 1.5509375 21.049141 2.1791406 21.129062 2.6191406 20.789062 L 4 19.710938 L 4 46 C 4 46.55 4.45 47 5 47 L 19 47 L 19 29 L 31 29 L 31 47 L 45 47 C 45.55 47 46 46.55 46 46 L 46 19.710938 L 47.380859 20.789062 C 47.570859 20.929063 47.78 21 48 21 C 48.3 21 48.589063 20.869141 48.789062 20.619141 C 49.129063 20.179141 49.049141 19.550938 48.619141 19.210938 L 25.619141 1.2597656 C 25.434141 1.1197656 25.2175 1.0507812 25 1.0507812 z M 35 5 L 35 6.0507812 L 41 10.730469 L 41 5 L 35 5 z"></path>
+                    </svg>HOME</a></li>
+                  <li class="hides"><a href="events.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:#FFFFFF; padding-right:5px;"><path d="M11 12h6v6h-6z"></path><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.001 16H5V8h14l.001 12z"></path></svg>EVENT</a></li>
+                  <li class="hides"><a href="sponsors.html"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill:#FFFFFF;"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 20V7h14V6l.002 14H5z"></path><path d="M7 9h10v2H7zm0 4h5v2H7z"></path></svg><style text-indent: 20px></style>SPONSORS</a></li>
+                  <li class="hides"><a href="contactUs.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill:#FFFFFF; padding-right:2px;"><path d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z"></path></svg>FIND US</a></li>
+                  <li  class="menuButton"    onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+                </nav>
+
+    <div id="container">
+        <div class="left">
+
+            <h1 class="road-rage-regular">CONTACT US</h1>
+            <p class="song-myung-regular">"Reach Out Anytime - whether you're in Hawkins or the Upside Down !"</p>
+            <div id="logos">
+                <div id="linkdin">
+                    <a href="https://www.linkedin.com/company/lead-tiet/" target="_blank">
+                        <img src="..//images/linkdin.png" alt="LinkedIn" class="social-logo" >
+                    </a>
+                  </div>
+                  <div id="youtube">
+                    <a href="https://www.youtube.com/@leadsociety7357" target="_blank">
+                        <img src="..//images/youtube.png" alt="LinkedIn" class="social-logo" >
+                    </a>
+                  </div>
+                  <div id="github">
+                    <a href="https://github.com/leadthapar" target="_blank">
+                        <img src="..//images/github.png" alt="LinkedIn" class="social-logo" >
+                    </a>
+                  </div>
+                  <div id="insta">
+                  <a href="https://www.instagram.com/lead_tiet/" target="_blank">
+                      <img src="..//images/insta.png" alt="Instagram" class="social-logo" >
+                  </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div id="form">
+                <div id="inform">
+                    <img src="..//images/logo.png" alt="Strange Things" height="20%" width="80%">
+                    <h1 class="song-myung-regular">FOR ANY QUERRY</h1>
+                  <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                  <input type="hidden" name="access_key" value="a7482e7e-0325-4db7-b268-67eb028a807b">
+                  <input type="text" id="name" name="name" placeholder="Full Name" required class="song-myung-regular">
+                  <input type="email" id="email" name="email" placeholder="Email" required class="song-myung-regular">
+                  <input type="tel" id="phone" name="phone" placeholder="Phone Number" required class="song-myung-regular">
+                  <textarea id="message" name="message" placeholder="Message" rows="2" required class="song-myung-regular"></textarea>
+                  <button type="submit" class="contentbutton" class="song-myung-regular">SUBMIT</button>
+                </form>
+                 </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <script src="contactUs.js"></script>
+</body>
+</html>
