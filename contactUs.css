@@ -96,16 +96,14 @@ nav a {
     padding: 0 30px; 
     text-decoration: none;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     color: white;
     transition: all 0.3s ease;
     text-transform: capitalize;
 }
 
 nav a:hover {
-    /* color: #00fbff; */
     color: red;
-    /* font-weight: bold; */
 }
 
 nav li img {
